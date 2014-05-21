@@ -65,76 +65,46 @@ include ../../../Makefile-Config.mk
 # Display
 #-------------------------------------------------------------------------------
 
-PROMPT              := "    ["$(COLOR_GREEN)" XEOS "$(COLOR_NONE)"]> ["$(COLOR_GREEN)" SRC  "$(COLOR_NONE)"]> ["$(COLOR_GREEN)" LIB  "$(COLOR_NONE)"]> ["$(COLOR_GREEN)" THRD "$(COLOR_NONE)"]> *** "
-
-#-------------------------------------------------------------------------------
-# Paths
-#-------------------------------------------------------------------------------
-
-DIR_SRC_PTHREAD     = $(PATH_SRC_LIB_PTHREAD)pthread/
-
-#-------------------------------------------------------------------------------
-# Search paths
-#-------------------------------------------------------------------------------
-
-# Define the search paths for source files
-vpath %$(EXT_C)         $(PATH_SRC_LIB_PTHREAD)
-vpath %$(EXT_C)         $(DIR_SRC_PTHREAD)
-
-#-------------------------------------------------------------------------------
-# File suffixes
-#-------------------------------------------------------------------------------
-
-# Adds the suffixes used in this file
-.SUFFIXES:  $(EXT_ASM_32)   \
-            $(EXT_ASM_64)   \
-            $(EXT_C)        \
-            $(EXT_H)        \
-            $(EXT_OBJ)      \
-            $(EXT_BIN)
+PROMPT  := "    ["$(COLOR_GREEN)" XEOS "$(COLOR_NONE)"]> ["$(COLOR_GREEN)" SRC  "$(COLOR_NONE)"]> ["$(COLOR_GREEN)" LIB  "$(COLOR_NONE)"]> ["$(COLOR_GREEN)" THRD "$(COLOR_NONE)"]> *** "
 
 #-------------------------------------------------------------------------------
 # Files
 #-------------------------------------------------------------------------------
 
-_FILES_C_OBJ_BUILD              = $(call XEOS_FUNC_C_OBJ,$(PATH_BUILD_32_LIB_OBJ_PTHREAD),$(PATH_SRC_LIB_PTHREAD))
-_FILES_C_OBJ_BUILD_PTHREAD      = $(call XEOS_FUNC_C_OBJ,$(PATH_BUILD_32_LIB_OBJ_PTHREAD),$(DIR_SRC_PTHREAD))
+_FILES  = $(call XEOS_FUNC_C_OBJ,$(PATH_SRC_LIB_PTHREAD))
+_FILES += $(call XEOS_FUNC_C_OBJ,$(PATH_SRC_LIB_PTHREAD)pthread/)
 
 #-------------------------------------------------------------------------------
 # Built-in targets
 #-------------------------------------------------------------------------------
 
 # Declaration for phony targets, to avoid problems with local files
-.PHONY: all     \
-        clean
+.PHONY: all clean
 
 #-------------------------------------------------------------------------------
 # Phony targets
 #-------------------------------------------------------------------------------
 
 # Build the full project
-all:    $(_FILES_C_OBJ_BUILD_PTHREAD)   \
-        $(_FILES_C_OBJ_BUILD)
+all: $(_FILES)
 	
 	@$(PRINT) $(PROMPT)$(COLOR_CYAN)"Generating the library archive"$(COLOR_NONE)" [ 32 bits ]: "$(COLOR_GRAY)"libpthread.a"$(COLOR_NONE)
-	@$(AR_32) $(ARGS_AR_32) $(PATH_BUILD_32_LIB_BIN)libpthread.a $(PATH_BUILD_32_LIB_OBJ_PTHREAD)*$(EXT_OBJ)
-	@$(RANLIB_32) $(PATH_BUILD_32_LIB_BIN)libpthread.a
+	@$(call XEOS_FUNC_LIB_STATIC_32,libpthread,$^)
 	
 	@$(PRINT) $(PROMPT)$(COLOR_CYAN)"Generating the library archive"$(COLOR_NONE)" [ 64 bits ]: "$(COLOR_GRAY)"libpthread.a"$(COLOR_NONE)
-	@$(AR_64) $(ARGS_AR_64) $(PATH_BUILD_64_LIB_BIN)libpthread.a $(PATH_BUILD_64_LIB_OBJ_PTHREAD)*$(EXT_OBJ)
-	@$(RANLIB_64) $(PATH_BUILD_64_LIB_BIN)libpthread.a
+	@$(call XEOS_FUNC_LIB_STATIC_64,libpthread,$^)
 	
 	@$(PRINT) $(PROMPT)$(COLOR_CYAN)"Generating the dynamic library"$(COLOR_NONE)" [ 32 bits ]: "$(COLOR_GRAY)"libpthread.so"$(COLOR_NONE)
-	@$(LD_32) $(ARGS_LD_SHARED_32) -o $(PATH_BUILD_32_LIB_BIN)libpthread.so $(PATH_BUILD_32_LIB_OBJ_PTHREAD)*$(EXT_OBJ_PIC)
+	@$(call XEOS_FUNC_LIB_DYNAMIC_32,libpthread,$^)
 	
 	@$(PRINT) $(PROMPT)$(COLOR_CYAN)"Generating the dynamic library"$(COLOR_NONE)" [ 64 bits ]: "$(COLOR_GRAY)"libpthread.so"$(COLOR_NONE)
-	@$(LD_64) $(ARGS_LD_SHARED_64) -o $(PATH_BUILD_64_LIB_BIN)libpthread.so $(PATH_BUILD_64_LIB_OBJ_PTHREAD)*$(EXT_OBJ_PIC)
+	@$(call XEOS_FUNC_LIB_DYNAMIC_64,libpthread,$^)
 
 # Cleans the build files
 clean:
 	
 	@$(PRINT) $(PROMPT)"Cleaning all build files"
-	@$(RM) $(ARGS_RM) $(PATH_BUILD_32_LIB_OBJ_PTHREAD)*
-	@$(RM) $(ARGS_RM) $(PATH_BUILD_64_LIB_OBJ_PTHREAD)*
-	@$(RM) $(ARGS_RM) $(PATH_BUILD_32_LIB_BIN)libpthread.*
-	@$(RM) $(ARGS_RM) $(PATH_BUILD_64_LIB_BIN)libpthread.*
+	@$(RM) $(ARGS_RM) $(PATH_BUILD_32_OBJ)$(subst $(PATH_SRC),,$(PATH_SRC_LIB_PTHREAD))
+	@$(RM) $(ARGS_RM) $(PATH_BUILD_64_OBJ)$(subst $(PATH_SRC),,$(PATH_SRC_LIB_PTHREAD))
+	@$(RM) $(ARGS_RM) $(PATH_BUILD_32_BIN)libpthread.*
+	@$(RM) $(ARGS_RM) $(PATH_BUILD_64_BIN)libpthread.*
