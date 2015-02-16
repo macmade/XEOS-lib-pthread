@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		055EB2231A923DFA009ACFEC /* pthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pthread.h; sourceTree = "<group>"; };
+		055EB2241A923DFA009ACFEC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		055EB2251A923DFA009ACFEC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		055EB2281A923DFA009ACFEC /* pthread_atfork.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_atfork.c; sourceTree = "<group>"; };
+		055EB2291A923DFA009ACFEC /* pthread_attr_destroy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_destroy.c; sourceTree = "<group>"; };
+		055EB22A1A923DFA009ACFEC /* pthread_attr_getdetachstate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_getdetachstate.c; sourceTree = "<group>"; };
+		055EB22B1A923DFA009ACFEC /* pthread_attr_getguardsize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_getguardsize.c; sourceTree = "<group>"; };
+		055EB22C1A923DFA009ACFEC /* pthread_attr_getinheritsched.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_getinheritsched.c; sourceTree = "<group>"; };
+		055EB22D1A923DFA009ACFEC /* pthread_attr_getschedparam.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_getschedparam.c; sourceTree = "<group>"; };
+		055EB22E1A923DFA009ACFEC /* pthread_attr_getschedpolicy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_getschedpolicy.c; sourceTree = "<group>"; };
+		055EB22F1A923DFA009ACFEC /* pthread_attr_getscope.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_getscope.c; sourceTree = "<group>"; };
+		055EB2301A923DFA009ACFEC /* pthread_attr_getstack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_getstack.c; sourceTree = "<group>"; };
+		055EB2311A923DFA009ACFEC /* pthread_attr_getstacksize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_getstacksize.c; sourceTree = "<group>"; };
+		055EB2321A923DFA009ACFEC /* pthread_attr_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_init.c; sourceTree = "<group>"; };
+		055EB2331A923DFA009ACFEC /* pthread_attr_setdetachstate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_setdetachstate.c; sourceTree = "<group>"; };
+		055EB2341A923DFA009ACFEC /* pthread_attr_setguardsize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_setguardsize.c; sourceTree = "<group>"; };
+		055EB2351A923DFA009ACFEC /* pthread_attr_setinheritsched.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_setinheritsched.c; sourceTree = "<group>"; };
+		055EB2361A923DFA009ACFEC /* pthread_attr_setschedparam.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_setschedparam.c; sourceTree = "<group>"; };
+		055EB2371A923DFA009ACFEC /* pthread_attr_setschedpolicy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_setschedpolicy.c; sourceTree = "<group>"; };
+		055EB2381A923DFA009ACFEC /* pthread_attr_setscope.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_setscope.c; sourceTree = "<group>"; };
+		055EB2391A923DFA009ACFEC /* pthread_attr_setstack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_setstack.c; sourceTree = "<group>"; };
+		055EB23A1A923DFA009ACFEC /* pthread_attr_setstacksize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_attr_setstacksize.c; sourceTree = "<group>"; };
+		055EB23B1A923DFA009ACFEC /* pthread_barrier_destroy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_barrier_destroy.c; sourceTree = "<group>"; };
+		055EB23C1A923DFA009ACFEC /* pthread_barrier_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_barrier_init.c; sourceTree = "<group>"; };
+		055EB23D1A923DFA009ACFEC /* pthread_barrier_wait.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_barrier_wait.c; sourceTree = "<group>"; };
+		055EB23E1A923DFA009ACFEC /* pthread_barrierattr_destroy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_barrierattr_destroy.c; sourceTree = "<group>"; };
+		055EB23F1A923DFA009ACFEC /* pthread_barrierattr_getpshared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_barrierattr_getpshared.c; sourceTree = "<group>"; };
+		055EB2401A923DFA009ACFEC /* pthread_barrierattr_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_barrierattr_init.c; sourceTree = "<group>"; };
+		055EB2411A923DFA009ACFEC /* pthread_barrierattr_setpshared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_barrierattr_setpshared.c; sourceTree = "<group>"; };
+		055EB2421A923DFA009ACFEC /* pthread_cancel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_cancel.c; sourceTree = "<group>"; };
+		055EB2431A923DFA009ACFEC /* pthread_cleanup_pop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_cleanup_pop.c; sourceTree = "<group>"; };
+		055EB2441A923DFA009ACFEC /* pthread_cleanup_push.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_cleanup_push.c; sourceTree = "<group>"; };
+		055EB2451A923DFA009ACFEC /* pthread_cond_broadcast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_cond_broadcast.c; sourceTree = "<group>"; };
+		055EB2461A923DFA009ACFEC /* pthread_cond_destroy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_cond_destroy.c; sourceTree = "<group>"; };
+		055EB2471A923DFA009ACFEC /* pthread_cond_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_cond_init.c; sourceTree = "<group>"; };
+		055EB2481A923DFA009ACFEC /* pthread_cond_signal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_cond_signal.c; sourceTree = "<group>"; };
+		055EB2491A923DFA009ACFEC /* pthread_cond_timedwait.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_cond_timedwait.c; sourceTree = "<group>"; };
+		055EB24A1A923DFA009ACFEC /* pthread_cond_wait.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_cond_wait.c; sourceTree = "<group>"; };
+		055EB24B1A923DFA009ACFEC /* pthread_condattr_destroy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_condattr_destroy.c; sourceTree = "<group>"; };
+		055EB24C1A923DFA009ACFEC /* pthread_condattr_getclock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_condattr_getclock.c; sourceTree = "<group>"; };
+		055EB24D1A923DFA009ACFEC /* pthread_condattr_getpshared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_condattr_getpshared.c; sourceTree = "<group>"; };
+		055EB24E1A923DFA009ACFEC /* pthread_condattr_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_condattr_init.c; sourceTree = "<group>"; };
+		055EB24F1A923DFA009ACFEC /* pthread_condattr_setclock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_condattr_setclock.c; sourceTree = "<group>"; };
+		055EB2501A923DFA009ACFEC /* pthread_condattr_setpshared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_condattr_setpshared.c; sourceTree = "<group>"; };
+		055EB2511A923DFA009ACFEC /* pthread_create.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_create.c; sourceTree = "<group>"; };
+		055EB2521A923DFA009ACFEC /* pthread_detach.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_detach.c; sourceTree = "<group>"; };
+		055EB2531A923DFA009ACFEC /* pthread_equal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_equal.c; sourceTree = "<group>"; };
+		055EB2541A923DFA009ACFEC /* pthread_exit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_exit.c; sourceTree = "<group>"; };
+		055EB2551A923DFA009ACFEC /* pthread_getconcurrency.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_getconcurrency.c; sourceTree = "<group>"; };
+		055EB2561A923DFA009ACFEC /* pthread_getcpuclockid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_getcpuclockid.c; sourceTree = "<group>"; };
+		055EB2571A923DFA009ACFEC /* pthread_getschedparam.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_getschedparam.c; sourceTree = "<group>"; };
+		055EB2581A923DFA009ACFEC /* pthread_getspecific.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_getspecific.c; sourceTree = "<group>"; };
+		055EB2591A923DFA009ACFEC /* pthread_join.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_join.c; sourceTree = "<group>"; };
+		055EB25A1A923DFA009ACFEC /* pthread_key_create.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_key_create.c; sourceTree = "<group>"; };
+		055EB25B1A923DFA009ACFEC /* pthread_key_delete.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_key_delete.c; sourceTree = "<group>"; };
+		055EB25C1A923DFA009ACFEC /* pthread_mutex_consistent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutex_consistent.c; sourceTree = "<group>"; };
+		055EB25D1A923DFA009ACFEC /* pthread_mutex_destroy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutex_destroy.c; sourceTree = "<group>"; };
+		055EB25E1A923DFA009ACFEC /* pthread_mutex_getprioceiling.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutex_getprioceiling.c; sourceTree = "<group>"; };
+		055EB25F1A923DFA009ACFEC /* pthread_mutex_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutex_init.c; sourceTree = "<group>"; };
+		055EB2601A923DFA009ACFEC /* pthread_mutex_lock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutex_lock.c; sourceTree = "<group>"; };
+		055EB2611A923DFA009ACFEC /* pthread_mutex_setprioceiling.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutex_setprioceiling.c; sourceTree = "<group>"; };
+		055EB2621A923DFA009ACFEC /* pthread_mutex_timedlock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutex_timedlock.c; sourceTree = "<group>"; };
+		055EB2631A923DFA009ACFEC /* pthread_mutex_trylock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutex_trylock.c; sourceTree = "<group>"; };
+		055EB2641A923DFA009ACFEC /* pthread_mutex_unlock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutex_unlock.c; sourceTree = "<group>"; };
+		055EB2651A923DFA009ACFEC /* pthread_mutexattr_destroy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutexattr_destroy.c; sourceTree = "<group>"; };
+		055EB2661A923DFA009ACFEC /* pthread_mutexattr_getprioceiling.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutexattr_getprioceiling.c; sourceTree = "<group>"; };
+		055EB2671A923DFA009ACFEC /* pthread_mutexattr_getprotocol.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutexattr_getprotocol.c; sourceTree = "<group>"; };
+		055EB2681A923DFA009ACFEC /* pthread_mutexattr_getpshared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutexattr_getpshared.c; sourceTree = "<group>"; };
+		055EB2691A923DFA009ACFEC /* pthread_mutexattr_getrobust.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutexattr_getrobust.c; sourceTree = "<group>"; };
+		055EB26A1A923DFA009ACFEC /* pthread_mutexattr_gettype.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutexattr_gettype.c; sourceTree = "<group>"; };
+		055EB26B1A923DFA009ACFEC /* pthread_mutexattr_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutexattr_init.c; sourceTree = "<group>"; };
+		055EB26C1A923DFA009ACFEC /* pthread_mutexattr_setprioceiling.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutexattr_setprioceiling.c; sourceTree = "<group>"; };
+		055EB26D1A923DFA009ACFEC /* pthread_mutexattr_setprotocol.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutexattr_setprotocol.c; sourceTree = "<group>"; };
+		055EB26E1A923DFA009ACFEC /* pthread_mutexattr_setpshared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutexattr_setpshared.c; sourceTree = "<group>"; };
+		055EB26F1A923DFA009ACFEC /* pthread_mutexattr_setrobust.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutexattr_setrobust.c; sourceTree = "<group>"; };
+		055EB2701A923DFA009ACFEC /* pthread_mutexattr_settype.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_mutexattr_settype.c; sourceTree = "<group>"; };
+		055EB2711A923DFA009ACFEC /* pthread_once.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_once.c; sourceTree = "<group>"; };
+		055EB2721A923DFA009ACFEC /* pthread_rwlock_destroy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_rwlock_destroy.c; sourceTree = "<group>"; };
+		055EB2731A923DFA009ACFEC /* pthread_rwlock_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_rwlock_init.c; sourceTree = "<group>"; };
+		055EB2741A923DFA009ACFEC /* pthread_rwlock_rdlock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_rwlock_rdlock.c; sourceTree = "<group>"; };
+		055EB2751A923DFA009ACFEC /* pthread_rwlock_timedrdlock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_rwlock_timedrdlock.c; sourceTree = "<group>"; };
+		055EB2761A923DFA009ACFEC /* pthread_rwlock_timedwrlock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_rwlock_timedwrlock.c; sourceTree = "<group>"; };
+		055EB2771A923DFA009ACFEC /* pthread_rwlock_tryrdlock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_rwlock_tryrdlock.c; sourceTree = "<group>"; };
+		055EB2781A923DFA009ACFEC /* pthread_rwlock_trywrlock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_rwlock_trywrlock.c; sourceTree = "<group>"; };
+		055EB2791A923DFA009ACFEC /* pthread_rwlock_unlock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_rwlock_unlock.c; sourceTree = "<group>"; };
+		055EB27A1A923DFA009ACFEC /* pthread_rwlock_wrlock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_rwlock_wrlock.c; sourceTree = "<group>"; };
+		055EB27B1A923DFA009ACFEC /* pthread_rwlockattr_destroy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_rwlockattr_destroy.c; sourceTree = "<group>"; };
+		055EB27C1A923DFA009ACFEC /* pthread_rwlockattr_getpshared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_rwlockattr_getpshared.c; sourceTree = "<group>"; };
+		055EB27D1A923DFA009ACFEC /* pthread_rwlockattr_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_rwlockattr_init.c; sourceTree = "<group>"; };
+		055EB27E1A923DFA009ACFEC /* pthread_rwlockattr_setpshared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_rwlockattr_setpshared.c; sourceTree = "<group>"; };
+		055EB27F1A923DFA009ACFEC /* pthread_self.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_self.c; sourceTree = "<group>"; };
+		055EB2801A923DFA009ACFEC /* pthread_setcancelstate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_setcancelstate.c; sourceTree = "<group>"; };
+		055EB2811A923DFA009ACFEC /* pthread_setcanceltype.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_setcanceltype.c; sourceTree = "<group>"; };
+		055EB2821A923DFA009ACFEC /* pthread_setconcurrency.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_setconcurrency.c; sourceTree = "<group>"; };
+		055EB2831A923DFA009ACFEC /* pthread_setschedparam.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_setschedparam.c; sourceTree = "<group>"; };
+		055EB2841A923DFA009ACFEC /* pthread_setspecific.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_setspecific.c; sourceTree = "<group>"; };
+		055EB2851A923DFA009ACFEC /* pthread_spin_destroy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_spin_destroy.c; sourceTree = "<group>"; };
+		055EB2861A923DFA009ACFEC /* pthread_spin_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_spin_init.c; sourceTree = "<group>"; };
+		055EB2871A923DFA009ACFEC /* pthread_spin_lock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_spin_lock.c; sourceTree = "<group>"; };
+		055EB2881A923DFA009ACFEC /* pthread_spin_trylock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_spin_trylock.c; sourceTree = "<group>"; };
+		055EB2891A923DFA009ACFEC /* pthread_spin_unlock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_spin_unlock.c; sourceTree = "<group>"; };
+		055EB28A1A923DFA009ACFEC /* pthread_testcancel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_testcancel.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		055EB2221A923DFA009ACFEC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				055EB2231A923DFA009ACFEC /* pthread.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		055EB2261A923DFA009ACFEC /* source */ = {
+			isa = PBXGroup;
+			children = (
+				055EB2271A923DFA009ACFEC /* pthread */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		055EB2271A923DFA009ACFEC /* pthread */ = {
+			isa = PBXGroup;
+			children = (
+				055EB2281A923DFA009ACFEC /* pthread_atfork.c */,
+				055EB2291A923DFA009ACFEC /* pthread_attr_destroy.c */,
+				055EB22A1A923DFA009ACFEC /* pthread_attr_getdetachstate.c */,
+				055EB22B1A923DFA009ACFEC /* pthread_attr_getguardsize.c */,
+				055EB22C1A923DFA009ACFEC /* pthread_attr_getinheritsched.c */,
+				055EB22D1A923DFA009ACFEC /* pthread_attr_getschedparam.c */,
+				055EB22E1A923DFA009ACFEC /* pthread_attr_getschedpolicy.c */,
+				055EB22F1A923DFA009ACFEC /* pthread_attr_getscope.c */,
+				055EB2301A923DFA009ACFEC /* pthread_attr_getstack.c */,
+				055EB2311A923DFA009ACFEC /* pthread_attr_getstacksize.c */,
+				055EB2321A923DFA009ACFEC /* pthread_attr_init.c */,
+				055EB2331A923DFA009ACFEC /* pthread_attr_setdetachstate.c */,
+				055EB2341A923DFA009ACFEC /* pthread_attr_setguardsize.c */,
+				055EB2351A923DFA009ACFEC /* pthread_attr_setinheritsched.c */,
+				055EB2361A923DFA009ACFEC /* pthread_attr_setschedparam.c */,
+				055EB2371A923DFA009ACFEC /* pthread_attr_setschedpolicy.c */,
+				055EB2381A923DFA009ACFEC /* pthread_attr_setscope.c */,
+				055EB2391A923DFA009ACFEC /* pthread_attr_setstack.c */,
+				055EB23A1A923DFA009ACFEC /* pthread_attr_setstacksize.c */,
+				055EB23B1A923DFA009ACFEC /* pthread_barrier_destroy.c */,
+				055EB23C1A923DFA009ACFEC /* pthread_barrier_init.c */,
+				055EB23D1A923DFA009ACFEC /* pthread_barrier_wait.c */,
+				055EB23E1A923DFA009ACFEC /* pthread_barrierattr_destroy.c */,
+				055EB23F1A923DFA009ACFEC /* pthread_barrierattr_getpshared.c */,
+				055EB2401A923DFA009ACFEC /* pthread_barrierattr_init.c */,
+				055EB2411A923DFA009ACFEC /* pthread_barrierattr_setpshared.c */,
+				055EB2421A923DFA009ACFEC /* pthread_cancel.c */,
+				055EB2431A923DFA009ACFEC /* pthread_cleanup_pop.c */,
+				055EB2441A923DFA009ACFEC /* pthread_cleanup_push.c */,
+				055EB2451A923DFA009ACFEC /* pthread_cond_broadcast.c */,
+				055EB2461A923DFA009ACFEC /* pthread_cond_destroy.c */,
+				055EB2471A923DFA009ACFEC /* pthread_cond_init.c */,
+				055EB2481A923DFA009ACFEC /* pthread_cond_signal.c */,
+				055EB2491A923DFA009ACFEC /* pthread_cond_timedwait.c */,
+				055EB24A1A923DFA009ACFEC /* pthread_cond_wait.c */,
+				055EB24B1A923DFA009ACFEC /* pthread_condattr_destroy.c */,
+				055EB24C1A923DFA009ACFEC /* pthread_condattr_getclock.c */,
+				055EB24D1A923DFA009ACFEC /* pthread_condattr_getpshared.c */,
+				055EB24E1A923DFA009ACFEC /* pthread_condattr_init.c */,
+				055EB24F1A923DFA009ACFEC /* pthread_condattr_setclock.c */,
+				055EB2501A923DFA009ACFEC /* pthread_condattr_setpshared.c */,
+				055EB2511A923DFA009ACFEC /* pthread_create.c */,
+				055EB2521A923DFA009ACFEC /* pthread_detach.c */,
+				055EB2531A923DFA009ACFEC /* pthread_equal.c */,
+				055EB2541A923DFA009ACFEC /* pthread_exit.c */,
+				055EB2551A923DFA009ACFEC /* pthread_getconcurrency.c */,
+				055EB2561A923DFA009ACFEC /* pthread_getcpuclockid.c */,
+				055EB2571A923DFA009ACFEC /* pthread_getschedparam.c */,
+				055EB2581A923DFA009ACFEC /* pthread_getspecific.c */,
+				055EB2591A923DFA009ACFEC /* pthread_join.c */,
+				055EB25A1A923DFA009ACFEC /* pthread_key_create.c */,
+				055EB25B1A923DFA009ACFEC /* pthread_key_delete.c */,
+				055EB25C1A923DFA009ACFEC /* pthread_mutex_consistent.c */,
+				055EB25D1A923DFA009ACFEC /* pthread_mutex_destroy.c */,
+				055EB25E1A923DFA009ACFEC /* pthread_mutex_getprioceiling.c */,
+				055EB25F1A923DFA009ACFEC /* pthread_mutex_init.c */,
+				055EB2601A923DFA009ACFEC /* pthread_mutex_lock.c */,
+				055EB2611A923DFA009ACFEC /* pthread_mutex_setprioceiling.c */,
+				055EB2621A923DFA009ACFEC /* pthread_mutex_timedlock.c */,
+				055EB2631A923DFA009ACFEC /* pthread_mutex_trylock.c */,
+				055EB2641A923DFA009ACFEC /* pthread_mutex_unlock.c */,
+				055EB2651A923DFA009ACFEC /* pthread_mutexattr_destroy.c */,
+				055EB2661A923DFA009ACFEC /* pthread_mutexattr_getprioceiling.c */,
+				055EB2671A923DFA009ACFEC /* pthread_mutexattr_getprotocol.c */,
+				055EB2681A923DFA009ACFEC /* pthread_mutexattr_getpshared.c */,
+				055EB2691A923DFA009ACFEC /* pthread_mutexattr_getrobust.c */,
+				055EB26A1A923DFA009ACFEC /* pthread_mutexattr_gettype.c */,
+				055EB26B1A923DFA009ACFEC /* pthread_mutexattr_init.c */,
+				055EB26C1A923DFA009ACFEC /* pthread_mutexattr_setprioceiling.c */,
+				055EB26D1A923DFA009ACFEC /* pthread_mutexattr_setprotocol.c */,
+				055EB26E1A923DFA009ACFEC /* pthread_mutexattr_setpshared.c */,
+				055EB26F1A923DFA009ACFEC /* pthread_mutexattr_setrobust.c */,
+				055EB2701A923DFA009ACFEC /* pthread_mutexattr_settype.c */,
+				055EB2711A923DFA009ACFEC /* pthread_once.c */,
+				055EB2721A923DFA009ACFEC /* pthread_rwlock_destroy.c */,
+				055EB2731A923DFA009ACFEC /* pthread_rwlock_init.c */,
+				055EB2741A923DFA009ACFEC /* pthread_rwlock_rdlock.c */,
+				055EB2751A923DFA009ACFEC /* pthread_rwlock_timedrdlock.c */,
+				055EB2761A923DFA009ACFEC /* pthread_rwlock_timedwrlock.c */,
+				055EB2771A923DFA009ACFEC /* pthread_rwlock_tryrdlock.c */,
+				055EB2781A923DFA009ACFEC /* pthread_rwlock_trywrlock.c */,
+				055EB2791A923DFA009ACFEC /* pthread_rwlock_unlock.c */,
+				055EB27A1A923DFA009ACFEC /* pthread_rwlock_wrlock.c */,
+				055EB27B1A923DFA009ACFEC /* pthread_rwlockattr_destroy.c */,
+				055EB27C1A923DFA009ACFEC /* pthread_rwlockattr_getpshared.c */,
+				055EB27D1A923DFA009ACFEC /* pthread_rwlockattr_init.c */,
+				055EB27E1A923DFA009ACFEC /* pthread_rwlockattr_setpshared.c */,
+				055EB27F1A923DFA009ACFEC /* pthread_self.c */,
+				055EB2801A923DFA009ACFEC /* pthread_setcancelstate.c */,
+				055EB2811A923DFA009ACFEC /* pthread_setcanceltype.c */,
+				055EB2821A923DFA009ACFEC /* pthread_setconcurrency.c */,
+				055EB2831A923DFA009ACFEC /* pthread_setschedparam.c */,
+				055EB2841A923DFA009ACFEC /* pthread_setspecific.c */,
+				055EB2851A923DFA009ACFEC /* pthread_spin_destroy.c */,
+				055EB2861A923DFA009ACFEC /* pthread_spin_init.c */,
+				055EB2871A923DFA009ACFEC /* pthread_spin_lock.c */,
+				055EB2881A923DFA009ACFEC /* pthread_spin_trylock.c */,
+				055EB2891A923DFA009ACFEC /* pthread_spin_unlock.c */,
+				055EB28A1A923DFA009ACFEC /* pthread_testcancel.c */,
+			);
+			path = pthread;
+			sourceTree = "<group>";
+		};
+		0595BA7A17AC11A70021435A = {
+			isa = PBXGroup;
+			children = (
+				055EB2221A923DFA009ACFEC /* include */,
+				055EB2241A923DFA009ACFEC /* Makefile */,
+				055EB2251A923DFA009ACFEC /* README.md */,
+				055EB2261A923DFA009ACFEC /* source */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		0595BA7F17AC11A70021435A /* XEOS-lib-pthread */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 0595BA8217AC11A70021435A /* Build configuration list for PBXLegacyTarget "XEOS-lib-pthread" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = "XEOS-lib-pthread";
+			passBuildSettingsInEnvironment = 1;
+			productName = "LIB-PTHREAD";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		0595BA7B17AC11A70021435A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "XS-Labs";
+			};
+			buildConfigurationList = 0595BA7E17AC11A70021435A /* Build configuration list for PBXProject "XEOS-lib-pthread" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0595BA7A17AC11A70021435A;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0595BA7F17AC11A70021435A /* XEOS-lib-pthread */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		0595BA8117AC11A70021435A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		0595BA8417AC11A70021435A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0595BA7E17AC11A70021435A /* Build configuration list for PBXProject "XEOS-lib-pthread" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0595BA8117AC11A70021435A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0595BA8217AC11A70021435A /* Build configuration list for PBXLegacyTarget "XEOS-lib-pthread" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0595BA8417AC11A70021435A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0595BA7B17AC11A70021435A /* Project object */;
+}
