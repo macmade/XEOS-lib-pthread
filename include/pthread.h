@@ -61,8 +61,8 @@
 
 /* $Id$ */
 
-#ifndef __XEOS_LIB_PTHREAD_PTHREAD_H__
-#define __XEOS_LIB_PTHREAD_PTHREAD_H__
+#ifndef XEOS_LIB_PTHREAD_PTHREAD_H
+#define XEOS_LIB_PTHREAD_PTHREAD_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -234,4 +234,4 @@ int         pthread_spin_unlock( pthread_spinlock_t * lock );
 }
 #endif
 
-#endif /* __XEOS_LIB_PTHREAD_PTHREAD_H__ */
+#endif /* XEOS_LIB_PTHREAD_PTHREAD_H */
