@@ -59,8 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
 #include <pthread.h>
 
 int pthread_attr_getstacksize( const pthread_attr_t * restrict attr, size_t * restrict stacksize )

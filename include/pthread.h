@@ -59,8 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
 #ifndef XEOS_LIB_PTHREAD_PTHREAD_H
 #define XEOS_LIB_PTHREAD_PTHREAD_H
 

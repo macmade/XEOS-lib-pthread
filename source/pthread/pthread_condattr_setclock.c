@@ -59,8 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
 #include <pthread.h>
 
 int pthread_condattr_setclock( pthread_condattr_t * attr, clockid_t clock_id )

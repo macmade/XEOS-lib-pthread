@@ -59,8 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
 #include <pthread.h>
 
 int pthread_mutex_timedlock( pthread_mutex_t * restrict mutex, const struct timespec * restrict abs_timeout )

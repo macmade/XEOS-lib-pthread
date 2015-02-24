@@ -59,8 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
 #include <pthread.h>
 
 int pthread_rwlock_timedrdlock( pthread_rwlock_t * restrict rwlock, const struct timespec * restrict abs_timeout )

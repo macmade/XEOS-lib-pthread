@@ -59,8 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
 #include <pthread.h>
 
 int pthread_mutex_init( pthread_mutex_t * restrict mutex, const pthread_mutexattr_t * restrict attr )

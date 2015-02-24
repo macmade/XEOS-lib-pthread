@@ -59,8 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
 #include <pthread.h>
 
 int pthread_cond_timedwait( pthread_cond_t * restrict cond,  pthread_mutex_t * restrict mutex, const struct timespec * restrict abstime )

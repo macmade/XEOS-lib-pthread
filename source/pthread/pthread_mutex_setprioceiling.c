@@ -59,8 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
 #include <pthread.h>
 
 int pthread_mutex_setprioceiling( pthread_mutex_t * restrict mutex, int prioceiling, int * restrict old_ceiling )

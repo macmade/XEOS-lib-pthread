@@ -59,8 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
 #include <pthread.h>
 
 int pthread_mutexattr_getprotocol( const pthread_mutexattr_t * restrict attr, int * restrict protocol )

@@ -59,8 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
 #include <pthread.h>
 
 int pthread_barrier_init( pthread_barrier_t * restrict barrier, const pthread_barrierattr_t * restrict attr, unsigned count )
