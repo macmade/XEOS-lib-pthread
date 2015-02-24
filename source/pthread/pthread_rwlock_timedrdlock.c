@@ -59,6 +59,11 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
+/*!
+ * @author          Jean-David Gadina
+ * @copyright       (c) 2010-2015, Jean-David Gadina - www.xs-labs.com
+ */
+
 #include <pthread.h>
 
 int pthread_rwlock_timedrdlock( pthread_rwlock_t * restrict rwlock, const struct timespec * restrict abs_timeout )

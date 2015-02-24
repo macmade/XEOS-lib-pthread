@@ -59,6 +59,11 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
+/*!
+ * @author          Jean-David Gadina
+ * @copyright       (c) 2010-2015, Jean-David Gadina - www.xs-labs.com
+ */
+
 #include <pthread.h>
 
 int pthread_barrier_init( pthread_barrier_t * restrict barrier, const pthread_barrierattr_t * restrict attr, unsigned count )
